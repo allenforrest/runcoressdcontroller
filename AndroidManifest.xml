@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.view.runcoressdcontroller"
+    android:versionCode="1"
+    android:versionName="1.3.0730" >
+
+    <uses-sdk
+        android:minSdkVersion="11"
+        android:targetSdkVersion="15" />
+
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.VIBRATE"/>
+    
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/runcore"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.view.runcoressdcontroller.ui.LoginActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.view.runcoressdcontroller.ui.DeviceActivity"
+            android:label="@string/title_activity_device" >
+        </activity>
+
+        <service android:name="com.view.runcoressdcontroller.service.BluetoothSPPService" >
+        </service>
+        
+        <activity
+            android:name="com.view.runcoressdcontroller.ui.BindActionActivity"
+            android:label="@string/title_bind_diag_title"
+            android:parentActivityName="com.view.runcoressdcontroller.ui.DeviceActivity"
+            android:theme="@style/Translucent_NoTitle" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.view.runcoressdcontroller.DeviceActivity" />
+        </activity>
+
+        <activity
+            android:name="com.view.runcoressdcontroller.ui.RunActionActivity"
+            android:label="@string/title_run_diag_title"
+            android:parentActivityName="com.view.runcoressdcontroller.ui.DeviceActivity"
+            android:theme="@style/Translucent_NoTitle" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.view.runcoressdcontroller.DeviceActivity" />
+        </activity>
+        
+        <activity
+            android:name="com.view.runcoressdcontroller.ui.SettingActivity"
+            android:label="@string/title_activity_dashboard"
+            android:parentActivityName="com.view.runcoressdcontroller.ui.DeviceActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.view.runcoressdcontroller.DeviceActivity" />
+        </activity>
+    </application>
+
+</manifest>

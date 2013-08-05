@@ -1,0 +1,72 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/scan_fragment"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="top"
+    android:background="@null"
+    >
+
+	<LinearLayout
+		android:orientation="horizontal"
+		android:layout_width="match_parent"
+		android:layout_height="70dip"
+        android:background="@drawable/head_blue"
+		>
+    	<ImageView
+			android:id="@+id/headimg_scan"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:src="@android:drawable/stat_sys_data_bluetooth" 
+			android:gravity="left|center_vertical"
+			android:layout_weight="0"
+			android:layout_margin="10dp"/>
+    		
+	    <TextView
+	        style="@style/general__shared__headline_text_style"
+	        android:id="@+id/title_scanned_devices"
+	        android:layout_width="match_parent"
+	        android:layout_height="match_parent"
+	        android:text="@string/title_scanned_devices"
+	        android:paddingLeft="5dp"
+	        android:layout_weight="0"
+	        android:gravity="left|center_vertical"
+	    />
+    </LinearLayout>
+    
+    <LinearLayout
+	    android:orientation="vertical"
+	    android:layout_width="match_parent"
+	    android:layout_height="match_parent"
+	    android:background="#ebebeb"
+	    android:layout_weight="1"
+    	>
+    
+	    <ListView android:id="@+id/scanned_devices"
+	        android:layout_width="match_parent"
+	        android:layout_height="match_parent"
+	        android:layout_marginLeft="5dip"
+	        android:layout_marginRight="5dip"
+	        android:layout_weight="1"
+	        android:layout_gravity="fill_vertical"/>
+	    
+	    <TextView android:id="@+id/tips_scanned_devices"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:textColor="#7f000000"
+	        android:paddingLeft="5dp"
+	        android:layout_weight="0"
+	        android:gravity="center_horizontal"
+	    />    
+	    <Button android:id="@+id/button_scan"
+	        style="@style/ButtonText"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:background="@drawable/general__shared__confirm_btn_45dip"
+	        android:text="@string/button_scan"
+	        android:layout_weight="0"
+	    />
+
+	</LinearLayout>
+    
+</LinearLayout>

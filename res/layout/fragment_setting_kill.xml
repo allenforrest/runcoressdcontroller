@@ -1,0 +1,95 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ebebeb"
+    android:orientation="vertical"
+    tools:context=".SettingsPwdSectionFragment" >
+
+	    <TextView
+	        android:id="@+id/title_kill"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+		    android:layout_marginLeft="16dp"
+		    android:layout_marginRight="16dp"
+	        android:layout_marginTop="20dp"
+			android:textSize="24px"		        
+	        android:gravity="center_vertical"
+	        android:text="@string/settings_kill"/>
+	
+	    <LinearLayout 
+	        android:id="@+id/layout_kill"
+		    android:layout_width="match_parent"
+		    android:layout_height="wrap_content"
+		    android:paddingLeft="16dp"
+		    android:paddingRight="16dp"
+		    android:orientation="vertical">	    
+		    <EditText
+		        android:id="@+id/editTextKillPwd"
+		        android:layout_width="match_parent"
+		        android:layout_height="40.0dip"
+		        android:layout_marginTop="10dp"
+		        android:background="@drawable/btn_white"
+		        android:gravity="left|center"
+		        android:hint="@string/settings_pwd_of_kill"
+		        android:imeOptions="actionDone"
+		        android:inputType="textPassword"
+		        android:paddingLeft="10dp"
+		        android:textColor="#7f000000"
+		        android:textSize="24px" >
+		    </EditText>
+		
+		    <Button android:id="@+id/button_kill_cfm"
+				android:textColor="#FFFFFF"
+		        android:layout_width="match_parent"
+		        android:layout_height="wrap_content"
+		        android:background="@drawable/general__shared__confirm_btn_45dip"
+		        android:text="@string/settings_kill_cfm"
+		        android:textSize="16dip"
+		    />
+	    </LinearLayout>
+	    
+	    <TextView
+	        android:id="@+id/title_max_retries"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:gravity="center_vertical"
+		    android:layout_marginLeft="16dp"
+		    android:layout_marginRight="16dp"
+	        android:layout_marginTop="20dp"
+			android:textSize="24px"		        
+	        android:text="@string/title_settings_max_retries"/>
+	
+	    <LinearLayout 
+	        android:id="@+id/layout_mod_kill_pwd"
+		    android:layout_width="match_parent"
+		    android:layout_height="wrap_content"
+		    android:paddingLeft="16dp"
+		    android:paddingRight="16dp"
+		    android:orientation="vertical">		    
+		    <EditText
+		        android:id="@+id/editTextMaxRetries"
+		        android:layout_width="match_parent"
+		        android:layout_height="40.0dip"
+		        android:layout_marginTop="10dp"
+		        android:background="@drawable/btn_white"
+		        android:gravity="left|center"
+		        android:hint="@string/settings_max_retries"
+		        android:imeOptions="actionDone"
+		        android:inputType="numberDecimal"
+		        android:paddingLeft="10dp"
+		        android:textColor="#7f000000"
+		        android:textSize="24px" >
+		    </EditText>
+		    <Button android:id="@+id/button_mod_max_retries_cfm"
+				android:textColor="#000000"
+		        android:layout_width="match_parent"
+		        android:layout_height="wrap_content"
+		        android:background="@drawable/general__shared__btn_45dip"
+		        android:text="@string/settings_mod_cfm"
+		        android:textSize="16dip"
+		        
+		    />
+	</LinearLayout>
+    
+</LinearLayout>

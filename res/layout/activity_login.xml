@@ -1,0 +1,98 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="@drawable/back1"
+    tools:context=".LoginActivity" >
+
+    <ImageView
+        android:id="@+id/imageViewBanner"
+        android:layout_width="400dip"
+        android:layout_height="100dip"
+        android:scaleType="fitCenter"
+        android:layout_marginTop="50dip"
+        android:layout_centerHorizontal="true"
+        android:background="@null"
+        android:src="@drawable/runcoressd" />
+
+    <EditText
+        android:id="@+id/editTextLoginUser"
+        android:layout_width="fill_parent"
+        android:layout_height="40.0dip"
+        android:layout_alignLeft="@+id/buttonLogin"
+        android:layout_alignParentTop="true"
+        android:layout_alignRight="@+id/buttonLogin"
+        android:layout_marginTop="200dp"
+        android:background="@drawable/general__shared__group_input_first"
+        android:gravity="left|center"
+        android:hint="@string/loginuser_hint"
+        android:imeOptions="actionSend"
+        android:paddingLeft="10dp"
+        android:textColor="#7f000000"
+        android:textSize="24px" >
+        <requestFocus />
+    </EditText>
+    <EditText
+        android:id="@+id/editTextLoginPwd"
+        android:layout_width="fill_parent"
+        android:layout_height="40.0dip"
+        android:layout_alignLeft="@+id/buttonLogin"
+        android:layout_alignParentTop="true"
+        android:layout_alignRight="@+id/buttonLogin"
+        android:layout_marginTop="240dp"
+        android:background="@drawable/general__shared__group_input_last"
+        android:gravity="left|center"
+        android:hint="@string/loginpwd_hint"
+        android:imeOptions="actionSend"
+        android:inputType="textPassword"
+        android:paddingLeft="10dp"
+        android:textColor="#7f000000"
+        android:textSize="24px" >
+    </EditText>
+
+    <TextView
+        android:id="@+id/textViewCorp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="56dp"
+        android:text="@string/runcore_name" 
+        android:textColor="#9fffffff" />
+
+    <TextView
+        android:id="@+id/textViewWebsite"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/textViewCorp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="22dp"
+        android:text="@string/runcore_website" 
+        android:textColor="#7fffffff" />
+
+    <Button
+        android:id="@+id/buttonLogin"
+        style="@style/ButtonText"
+        android:layout_height="40dip"
+        android:layout_below="@+id/editTextLoginPwd"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/btn_blue"
+        android:text="@string/button_login" />
+
+    <TextView
+        android:id="@+id/TextView01"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="160dp"
+        android:text="@string/login_name"
+        android:textSize="16dip"
+        android:textStyle="bold"
+        android:textColor="@color/menu" />
+        
+</RelativeLayout>

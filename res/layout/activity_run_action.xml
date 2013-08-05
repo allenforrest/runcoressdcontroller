@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="280dip"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" 
+    android:id="@+id/run_action_diag"
+    android:background="@null"
+    >
+	
+	    <LinearLayout android:orientation="horizontal"
+	        android:layout_width="match_parent" 
+	        android:layout_height="wrap_content"
+	        android:background="@drawable/head_yellow"
+	        >
+	  
+	   		<ImageView
+	       		android:id="@+id/devimg"
+	       		android:layout_width="wrap_content"
+	       		android:layout_height="wrap_content"
+	       		android:src="@drawable/bookshelf__menu_normal" 
+	       		android:gravity="center_vertical"
+	       		android:layout_margin="10dp"
+	       		/>
+	   		        
+	        <TextView android:id="@+id/title"
+	            android:layout_width="match_parent"
+	            android:layout_height="match_parent"
+	            android:text="@string/title_run_diag_title"
+				android:textColor="#FFFFFF"
+	            android:textStyle="bold" 
+	       		android:gravity="left|center_vertical"
+	            android:textSize="28px"
+	            />
+	  
+	    </LinearLayout>
+
+	    <LinearLayout android:orientation="vertical"
+	        android:layout_width="match_parent" 
+	        android:layout_height="wrap_content"
+	        android:background="#ebebeb"
+	        >	    	
+		    <TextView android:id="@+id/bind_alert"
+		        android:textColor="#7f000000"
+		        android:layout_width="wrap_content"
+		        android:layout_height="40dip"
+		        android:layout_marginLeft="5dip"
+		        android:layout_marginRight="5dip"
+		        android:layout_marginTop="10dip"
+		        android:layout_marginBottom="10dip"
+		        android:text="@string/title_bind_diag_info"
+		       	android:gravity="center_vertical"
+		       	android:textStyle="bold" 
+		        android:textSize="16dip" />    
+		    
+		    <EditText
+		        android:id="@+id/editTextDiskPwd"
+		        android:layout_width="fill_parent"
+		        android:layout_height="40.0dip"
+		        android:background="#ffffff"
+		        android:gravity="left|center"
+		        android:hint="@string/disk_pwd_hint"
+		        android:imeOptions="actionSend"
+		        android:maxLength="32"
+		        android:inputType="textPassword"
+		        android:paddingLeft="10dp"
+		        android:textColor="#7f000000"
+		        android:textSize="24px"
+		        android:layout_marginLeft="5dip"
+				android:layout_marginRight="5dip"
+		        android:layout_marginBottom="5dip"
+		        >
+		        <requestFocus />
+		    </EditText>
+		
+		    <Button
+		        android:id="@+id/buttonRun"
+		        style="@style/ButtonText"
+		        android:layout_width="fill_parent"
+		        android:layout_height="40dip"
+		        android:layout_marginTop="20dip"
+		        android:layout_marginLeft="16dip"
+		        android:layout_marginRight="16dip"
+		        android:layout_marginBottom="20dip"
+		        android:background="@drawable/general__shared__confirm_btn_45dip"
+		        android:text="@string/button_run"
+		        />
+	</LinearLayout>
+</LinearLayout>

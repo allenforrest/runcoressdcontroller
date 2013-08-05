@@ -1,0 +1,119 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ebebeb"
+    android:orientation="vertical"
+    tools:context=".SettingsPwdSectionFragment" >
+
+	    <TextView
+	        android:id="@+id/title_mod_run_pwd"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+		    android:layout_marginLeft="16dp"
+		    android:layout_marginRight="16dp"
+	        android:layout_marginTop="20dp"
+			android:textSize="24px"		        
+	        android:gravity="center_vertical"
+	        android:text="@string/settings_run_pwd"/>
+	
+	    <LinearLayout 
+	        android:id="@+id/layout_mod_run_pwd"
+		    android:layout_width="match_parent"
+		    android:layout_height="wrap_content"
+		    android:paddingLeft="16dp"
+		    android:paddingRight="16dp"
+		    android:orientation="vertical">	    
+		    <EditText
+		        android:id="@+id/editTextOldRunPwd"
+		        android:layout_width="match_parent"
+		        android:layout_height="40.0dip"
+		        android:layout_marginTop="10dp"
+		        android:background="@drawable/general__shared__group_input_first"
+		        android:gravity="left|center"
+		        android:hint="@string/settings_old_run_pwd"
+		        android:imeOptions="actionDone"
+		        android:inputType="textPassword"
+		        android:paddingLeft="10dp"
+		        android:textColor="#7f000000"
+		        android:textSize="24px" >
+		    </EditText>
+		    <EditText
+		        android:id="@+id/editTextNewRunPwd"
+		        android:layout_width="match_parent"
+		        android:layout_height="40.0dip"
+		        android:background="@drawable/general__shared__group_input_last"
+		        android:gravity="left|center"
+		        android:hint="@string/settings_new_run_pwd"
+		        android:imeOptions="actionDone"
+		        android:inputType="textPassword"
+		        android:paddingLeft="10dp"
+		        android:textColor="#7f000000"
+		        android:textSize="24px" >
+		    </EditText>    
+		
+		    <Button android:id="@+id/button_mod_run_pwd"
+				android:textColor="#FFFFFF"
+		        android:layout_width="match_parent"
+		        android:layout_height="wrap_content"
+		        android:background="@drawable/general__shared__confirm_btn_45dip"
+		        android:text="@string/settings_mod_cfm"
+		        android:textSize="16dip"
+		    />
+	    </LinearLayout>
+	    <TextView
+	        android:id="@+id/title_mod_kill_pwd"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:gravity="center_vertical"
+		    android:layout_marginLeft="16dp"
+		    android:layout_marginRight="16dp"
+	        android:layout_marginTop="20dp"
+			android:textSize="24px"		        
+	        android:text="@string/settings_kill_pwd"/>
+	
+	    <LinearLayout 
+	        android:id="@+id/layout_mod_kill_pwd"
+		    android:layout_width="match_parent"
+		    android:layout_height="wrap_content"
+		    android:paddingLeft="16dp"
+		    android:paddingRight="16dp"
+		    android:orientation="vertical">		    
+		    <EditText
+		        android:id="@+id/editTextOldKillPwd"
+		        android:layout_width="match_parent"
+		        android:layout_height="40.0dip"
+		        android:layout_marginTop="10dp"
+		        android:background="@drawable/general__shared__group_input_first"
+		        android:gravity="left|center"
+		        android:hint="@string/settings_old_kill_pwd"
+		        android:imeOptions="actionDone"
+		        android:inputType="textPassword"
+		        android:paddingLeft="10dp"
+		        android:textColor="#7f000000"
+		        android:textSize="24px" >
+		    </EditText>
+		    <EditText
+		        android:id="@+id/editTextNewKillPwd"
+		        android:layout_width="match_parent"
+		        android:layout_height="40.0dip"
+		        android:background="@drawable/general__shared__group_input_last"
+		        android:gravity="left|center"
+		        android:hint="@string/settings_new_kill_pwd"
+		        android:imeOptions="actionDone"
+		        android:inputType="textPassword"
+		        android:paddingLeft="10dp"
+		        android:textColor="#7f000000"
+		        android:textSize="24px" >
+		    </EditText>    
+		
+		    <Button android:id="@+id/button_mod_kill_pwd"
+				android:textColor="#000000"
+		        android:layout_width="match_parent"
+		        android:layout_height="wrap_content"
+		        android:background="@drawable/general__shared__btn_45dip"
+		        android:text="@string/settings_mod_cfm"
+		        android:textSize="16dip"
+		    />
+	</LinearLayout>    
+</LinearLayout>

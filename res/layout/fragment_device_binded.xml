@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/binded_fragment"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:background="@null"
+    >
+
+	<LinearLayout
+		android:orientation="horizontal"
+		android:layout_width="match_parent"
+		android:layout_height="70dip"
+        android:background="@drawable/head_yellow"
+		>
+    	<ImageView
+			android:id="@+id/headimg_binded"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:src="@drawable/store__shared__search_normal" 
+			android:gravity="left|center_vertical"
+			android:layout_weight="0"
+			android:layout_margin="10dp"/>
+    		
+	    <TextView
+	        style="@style/general__shared__headline_text_style"
+	        android:id="@+id/txt_binded_conn_devices"
+	        android:layout_width="match_parent"
+	        android:layout_height="match_parent"
+	        android:text="@string/title_runcore_devices"
+	        android:paddingLeft="5dp"
+	        android:layout_weight="0"
+	        android:gravity="left|center_vertical"
+	    />
+    </LinearLayout>    
+
+	<LinearLayout
+		android:orientation="vertical"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:background="#ebebeb"
+		android:layout_weight="1"
+		>
+   
+	    <ListView android:id="@+id/binded_devices"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_marginLeft="5dip"
+	        android:layout_marginRight="5dip"
+			android:gravity="top"
+	        android:layout_weight="1"
+	    />
+
+	    <ImageView
+	        android:id="@+id/imageView1"
+	        android:layout_width="match_parent"
+	        android:layout_height="match_parent"
+	        android:layout_marginLeft="50dp"
+	        android:layout_marginRight="50dp"
+	        android:layout_marginBottom="50dp"
+	        
+	        
+	        android:layout_weight="1"
+	        android:src="@drawable/general__shared__network_error" />
+	    
+	    <TextView android:id="@+id/tips_binded_devices"
+	        android:text="@string/binded_tips_init"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:textColor="#7f000000"
+	        android:paddingLeft="5dp"
+	        android:layout_weight="0"
+	        android:layout_marginBottom="20dip"
+	        android:gravity="center_horizontal"
+	    /> 	    
+ 	</LinearLayout>  
+    
+    <LinearLayout
+        android:id="@+id/menu"
+        android:layout_width="fill_parent"
+        android:layout_height="40dip"
+        android:layout_gravity="bottom"
+		android:background="@color/menu"
+        >
+
+        <ImageView
+            android:id="@+id/delimg"
+            android:layout_height="fill_parent"
+            android:layout_width="fill_parent"
+            android:layout_gravity="center"
+            android:src="@drawable/ic_menu_delete" />
+
+    </LinearLayout>
+    	
+ </LinearLayout>  

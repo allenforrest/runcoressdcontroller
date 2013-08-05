@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+  
+    <ImageView
+       android:id="@+id/devimg"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:src="@android:drawable/stat_sys_data_bluetooth" 
+       android:gravity="center_vertical"
+       android:layout_weight="0"
+       android:layout_margin="10dp"/>
+    
+    <LinearLayout android:orientation="vertical"
+        android:layout_width="match_parent" 
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_weight="1">
+  
+        <TextView android:id="@+id/title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:textSize="18sp" />
+
+        <TextView android:id="@+id/info" 
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" 
+            android:textColor="#7f000000"
+            android:textSize="12sp" />
+  
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/flagimg"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:gravity="center_vertical"
+	    android:layout_margin="10dp"
+       	android:layout_weight="0"
+        />
+    
+    <ImageView
+        android:id="@+id/arrowimg"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:gravity="center_vertical"
+	    android:layout_margin="10dp"
+       	android:layout_weight="0"
+        android:src="@drawable/right_arrow" />
+  
+</LinearLayout>
